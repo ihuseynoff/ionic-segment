@@ -8,6 +8,9 @@ Check out the [demo] (http://codepen.io/ihuseynoff/pen/dXOaZP)
 
 
 # How to use it
+
+
+## Basic Usage
 ```html
   <ion-segment ng-model="categories" full="true"  assertive>
     <ion-segment-button value="movies">
@@ -17,9 +20,7 @@ Check out the [demo] (http://codepen.io/ihuseynoff/pen/dXOaZP)
       Series
     </ion-segment-button>
   </ion-segment>
-```
-
-```html
+ 
 <div ng-switch="categories">
   
    <ion-list ng-switch-when="movies">
