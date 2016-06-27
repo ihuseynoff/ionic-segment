@@ -1,0 +1,186 @@
+ul#ion-segment {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 100%;
+}
+ul#ion-segment li.full {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  width: 0;
+  padding: 0 !important;
+}
+ul#ion-segment li {
+  background-color: transparent;
+  margin-right: 0;
+  margin-left: 0;
+  padding: 0 13px 0 13px;
+  color: #fff;
+  border: 1px solid;
+  transition: all 100ms linear;
+  -webkit-transition: all 100ms linear;
+  line-height: 23px;
+  max-height: 25px;
+  min-height: 25px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  background: none;
+  text-align: center;
+  cursor: pointer;
+}
+ul#ion-segment li:first-of-type {
+  margin-right: 0;
+  border-radius: 4px 0 0 4px;
+}
+ul#ion-segment li:not(:first-of-type) {
+  border-left-width: 0;
+}
+ul#ion-segment li:last-of-type {
+  margin-left: 0;
+  border-left-width: 0;
+  border-radius: 0 4px 4px 0;
+}
+ul#ion-segment li:last-of-type .active {
+  background: red;
+}
+
+ul#ion-segment[light] li.active {
+  background-color: #fff;
+  color: #fff;
+}
+
+ul#ion-segment[light] li {
+  border-color: #fff;
+  color: #fff;
+}
+
+ul#ion-segment[light] li:hover:not(.active) {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+ul#ion-segment[stable] li.active {
+  background-color: #f8f8f8;
+  color: #fff;
+}
+
+ul#ion-segment[stable] li {
+  border-color: #f8f8f8;
+  color: #f8f8f8;
+}
+
+ul#ion-segment[stable] li:hover:not(.active) {
+  background-color: rgba(248, 248, 248, 0.1);
+}
+
+ul#ion-segment[positive] li.active {
+  background-color: #387ef5;
+  color: #fff;
+}
+
+ul#ion-segment[positive] li {
+  border-color: #387ef5;
+  color: #387ef5;
+}
+
+ul#ion-segment[positive] li:hover:not(.active) {
+  background-color: rgba(56, 126, 245, 0.1);
+}
+
+ul#ion-segment[calm] li.active {
+  background-color: #11c1f3;
+  color: #fff;
+}
+
+ul#ion-segment[calm] li {
+  border-color: #11c1f3;
+  color: #11c1f3;
+}
+
+ul#ion-segment[calm] li:hover:not(.active) {
+  background-color: rgba(17, 193, 243, 0.1);
+}
+
+ul#ion-segment[balanced] li.active {
+  background-color: #33cd5f;
+  color: #fff;
+}
+
+ul#ion-segment[balanced] li {
+  border-color: #33cd5f;
+  color: #33cd5f;
+}
+
+ul#ion-segment[balanced] li:hover:not(.active) {
+  background-color: rgba(51, 205, 95, 0.1);
+}
+
+ul#ion-segment[energized] li.active {
+  background-color: #ffc900;
+  color: #fff;
+}
+
+ul#ion-segment[energized] li {
+  border-color: #ffc900;
+  color: #ffc900;
+}
+
+ul#ion-segment[energized] li:hover:not(.active) {
+  background-color: rgba(255, 201, 0, 0.1);
+}
+
+ul#ion-segment[assertive] li.active {
+  background-color: #ef473a;
+  color: #fff;
+}
+
+ul#ion-segment[assertive] li {
+  border-color: #ef473a;
+  color: #ef473a;
+}
+
+ul#ion-segment[assertive] li:hover:not(.active) {
+  background-color: rgba(239, 71, 58, 0.1);
+}
+
+ul#ion-segment[royal] li.active {
+  background-color: #886aea;
+  color: #fff;
+}
+
+ul#ion-segment[royal] li {
+  border-color: #886aea;
+  color: #886aea;
+}
+
+ul#ion-segment[royal] li:hover:not(.active) {
+  background-color: rgba(136, 106, 234, 0.1);
+}
+
+ul#ion-segment[dark] li.active {
+  background-color: #444;
+  color: #fff;
+}
+
+ul#ion-segment[dark] li {
+  border-color: #444;
+  color: #444;
+}
+
+ul#ion-segment[dark] li:hover:not(.active) {
+  background-color: rgba(68, 68, 68, 0.1);
+}

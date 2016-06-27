@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>ionic segmented control</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    
+    <link rel='stylesheet prefetch' href='http://code.ionicframework.com/1.3.1/css/ionic.min.css'>
+
+        <link rel="stylesheet" href="css/style.css">
+
+    
+    
+    
+  </head>
+
+  <body>
+
+    <html ng-app="app">
+<div class="bar bar-header bar-dark">
+<ion-segment ng-model="categories" full="true"  assertive>
+  <ion-segment-button value="movies">
+    Movies
+  </ion-segment-button>
+  <ion-segment-button value="series">
+    Series
+  </ion-segment-button>
+  <ion-segment-button value="animation">
+    Animate
+  </ion-segment-button>
+  
+</ion-segment>
+  </div>
+<ion-content class="has-header">
+
+  <div ng-switch="categories">
+
+    <ion-list ng-switch-when="movies">
+      <ion-item>
+        Batman Begins
+      </ion-item>
+      <ion-item>
+        Transporter
+      </ion-item>
+      <ion-item>
+        Million Dollar Baby
+      </ion-item>
+    </ion-list>
+
+    <ion-list ng-switch-when="series">
+      <ion-item>
+        Game of Thrones
+      </ion-item>
+      <ion-item>
+        Daredevil
+      </ion-item>
+      <ion-item>
+        Arrow
+      </ion-item>
+    </ion-list>
+    <ion-list ng-switch-when="animation">
+      <ion-item>
+        Ice Age
+      </ion-item>
+      <ion-item>
+        Lion King
+      </ion-item>
+      <ion-item>
+        Up
+      </ion-item>
+    </ion-list>
+
+  </div>
+</ion-content>
+
+</html>
+    <script src='http://code.ionicframework.com/1.3.1/js/ionic.bundle.min.js'></script>
+
+        <script src="js/index.js"></script>
+
+    
+    
+    
+  </body>
+</html>
