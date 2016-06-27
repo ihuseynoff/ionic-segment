@@ -34,7 +34,7 @@ angular.module('DemoApp', ['ionic', 'plgn.ionicSegment'])
     <ion-segment-button value="series">
       Series
     </ion-segment-button>
-        <ion-segment-button value="animation">
+    <ion-segment-button value="animation">
       Animations
     </ion-segment-button>
   </ion-segment>
