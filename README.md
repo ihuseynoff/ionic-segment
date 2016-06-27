@@ -13,8 +13,8 @@ Check out the [demo](http://codepen.io/ihuseynoff/pen/dXOaZP)
 Please first imports the following JavaScript/CSS file imports in your index.html.
 
 ```html
-<link rel="stylesheet" href="bower_components/ionic-segment/dist/css/style.css">
-<script src="bower_components/ionic-segment/dist/js/directive.js"></script>
+<link rel="stylesheet" href="bower_components/ionic-segment/dist/ionic-segment.css">
+<script src="bower_components/ionic-segment/dist/ionic-segment.js"></script>
 ```
 
 
