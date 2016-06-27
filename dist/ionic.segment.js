@@ -1,6 +1,4 @@
-angular.module('app', ['ionic'])
-
-.directive('ionSegment', function() {
+angular.module('plgn.ionic-segment',[]).directive('ionSegment', function() {
     return {
       restrict: 'E',
       require: "ngModel",
