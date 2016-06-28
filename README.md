@@ -1,10 +1,10 @@
 # ionic-segment
 
-This is an iOS segmented control directive for ionc v1. It is inspired from [ionic v2](http://ionicframework.com/docs/v2/components/#segment). Do not hesitate to contribute to this project.
+This is an iOS segmented control directive for ionic v1. It is inspired from [ionic v2](http://ionicframework.com/docs/v2/components/#segment). Do not hesitate to contribute to this project.
 
 
 # Demo
-Check out the [demo](http://codepen.io/ihuseynoff/pen/dXOaZP)
+Check out the live [demo](http://codepen.io/ihuseynoff/pen/dXOaZP)
 
 
 # How to use it
@@ -66,6 +66,11 @@ angular.module('DemoApp', ['ionic', 'plgn.ionic-segment'])
   </div>
   ```
 ## Options 
+ 
+setting segment cover full width
 
-
+```html
+  <ion-segment ng-model="categories" full="true"  assertive>
+```
+ 
 
