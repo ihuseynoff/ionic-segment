@@ -9,6 +9,7 @@ angular.module('plgn.ionic-segment',[]).directive('ionSegment', function() {
       },
       template: '<ul id="ion-segment" ng-transclude></ul>',
       link: function($scope, $element, $attr, ngModelCtrl) {
+        console.log("ion-segment link")
         if ($scope.full == "true") {
           $element.find("li").addClass("full");
         }
@@ -28,13 +29,24 @@ angular.module('plgn.ionic-segment',[]).directive('ionSegment', function() {
       replace: true,
       template: '<li ng-transclude></li>',
       link: function($scope, $element, $attr, ngModelCtrl) {
-        var clickingCallback = function() {
-
-          $element.parent().find("li").removeClass("active");
-          $element.addClass("active");
-          var segment = $element.attr("value");
-          ngModelCtrl.$setViewValue(segment);
+        var value;
+        function onChange(){
+          if(value === ngModelCtrl.$modelValue){
+            $element.parent().find("li").removeClass("active");
+            $element.addClass("active");
+          }
         }
+        $scope.$watch(function(){
+          return ngModelCtrl.$modelValue;
+        }, onChange);
+        $attr.$observe("value", function(_value){
+          value = _value;
+          onChange();
+        });
+
+        var clickingCallback = function() {
+          ngModelCtrl.$setViewValue(value);
+        };
 
         $element.bind('click', clickingCallback);
 
