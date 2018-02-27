@@ -1,0 +1,23 @@
+{
+  "name": "ionic-segment",
+  "main": "ionic-segment.js",
+  "version": "0.1.0",
+  "homepage": "https://github.com/ihuseynoff/ionic-segment",
+  "authors": [
+    "ihuseynoff"
+  ],
+  "description": "This is an iOS segmented control directive for ionic v1",
+  "keywords": [
+    "angular",
+    "ionic",
+    "segment"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "example",
+    "test",
+    "tests"
+  ]
+}
